@@ -72,6 +72,15 @@ test("should return mock token", () => {
 });
 ```
 
+In development and test scenarios where dummy or inactive credentials are required, adopting a clear and standardized naming convention (e.g., prefixing with dummy_) enables immediate recognition.
+This approach significantly reduces the need for repeated validation, allowing security tools and reviewers to confidently classify such instances as false positives. It also establishes a clear distinction between placeholder values and actual sensitive data.
+By consistently applying this practice, teams benefit from:
+
+* Faster and more efficient secure code reviews 
+* Improved clarity and maintainability of code 
+* Reduced alert fatigue from secret scanning tools 
+* Enhanced accuracy in identifying genuine security risks 
+
 ---
 
 ## ⚠️ The Core Problem
