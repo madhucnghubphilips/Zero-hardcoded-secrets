@@ -54,6 +54,10 @@ test("should return mock token", () => {
 });
 ```
 
+* In the above example, Development team member has to confirm about ClientId and ClientSecret values and usage details.<br>
+* If both values are not real values or dummy values, issue will be marked as false positive.<br>
+* As organizations evolve their security tooling, previously resolved findings are often reintroduced by new scanning solutions. This results in repetitive validation cycles, driving duplicated effort, operational inefficiencies, and increased developer fatigue.<br>
+
 ---
 
 ## ⚠️ The Core Problem
