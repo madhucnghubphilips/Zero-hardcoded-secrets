@@ -13,7 +13,7 @@ Standardized dummy credential framework as a preventive and scalable solution to
 
 
 # Eliminating Hardcoded Secrets in Source Code  
-## A Standardized Dummy Credential Framework
+
 
 ---
 
@@ -31,16 +31,18 @@ This approach aligns with secure software development practices and supports com
 ---
 
 ## 🚀 Introduction
-The rapid evolution of **DevSecOps** practices has significantly improved software delivery speed and collaboration. However, it has also amplified the risk of sensitive data exposure within source code repositories. :contentReference[oaicite:1]{index=1}  
+The rapid evolution of DevSecOps practices has significantly improved software delivery speed and collaboration. However, it has also amplified the risk of sensitive data exposure within source code repositories. Hardcoded credentials including API keys, tokens, and passwords are frequently introduced during development and testing phases, often persisting unnoticed across the software lifecycle.
 
-Hardcoded credentials—such as API keys, tokens, and passwords—are frequently introduced during development and testing phases and often persist unnoticed across the software lifecycle.
+These credentials propagate across version control systems, CI/CD pipelines, and distributed environments, creating a systemic security weakness. Traditional detection mechanisms, while valuable, remain reactive and insufficient to address the root cause of the problem.
 
-These credentials propagate across:
-- Version control systems  
-- CI/CD pipelines  
-- Distributed environments  
+In modern software development and testing environments, the use of dummy or inactive credentials such as access tokens, refresh tokens, credentials and placeholder secrets are often necessary to simulate real-world or test scenarios for application testing. However, secret scanning tools frequently flag these artifacts as potential exposures, resulting in a high volume of false positives.
 
-…creating a systemic security weakness.
+Although platforms like GitHub Advanced Security allow teams to classify such findings as false positives, and tools like git-secrets provide allow-list capabilities, these approaches are inherently tool specific. They lack persistence and porting false positive information across different tools and environments.
+
+As organizations evolve their security posture whether by upgrading existing tools or adopting new secret scanning solutions, previously resolved false positives often resurface. This creates a recurring operational burden, requiring developers to repeatedly review, validate, and reclassify identical findings. The result is diminished productivity, increased alert fatigue, and friction within the development lifecycle.
+
+This is a broader industry challenge: false positive classifications are not portable across different secret scanning tools. As a result, organizations using multiple tools or migrating between them must re-evaluate and re-mark the same issues, leading to duplicated effort and frustration.
+
 
 ---
 
