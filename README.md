@@ -9,7 +9,7 @@ Standardized dummy credential framework as a preventive and scalable solution to
  
 
 <!-- GIF -->
-<img align="center" height="400" width="800" src="https://github.com/madhucnghubphilips/Payment-Security/blob/main/resources/Secure%20Payment.png"/>
+<img align="center" height="400" width="800" src="https://github.com/madhucnghubphilips/Zero-hardcoded-secrets/blob/main/Hardcoded%20Secrets.png"/>
 
 
 # Eliminating Hardcoded Secrets in Source Code  
