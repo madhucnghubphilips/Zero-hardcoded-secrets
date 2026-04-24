@@ -11,7 +11,6 @@ Standardized dummy credential framework as a preventive and scalable solution to
 <!-- GIF -->
 <img align="center" height="400" width="800" src="https://github.com/madhucnghubphilips/Payment-Security/blob/main/resources/Secure%20Payment.png"/>
 <!-- Header Section -->
-<h1 align="center"><font face="Arial">Payment-Security</font></h1>
 <h2 align="left"><font face="Arial">Payment security encompasses the systems, processes, and safeguards designed to protect financial transactions from unauthorized access, data breaches, and fraud. Whether for online or offline businesses, robust payment security is crucial for maintaining customer trust, preventing financial losses, and adhering to relevant regulations and industry standards.</font></h2>
 
 <h2 align="left"><font face="Arial">The payment systems involves;</font></h2> 
