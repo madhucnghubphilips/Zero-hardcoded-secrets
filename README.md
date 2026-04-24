@@ -58,6 +58,20 @@ test("should return mock token", () => {
 * If both values are not real values or dummy values, issue will be marked as false positive.<br>
 * As organizations evolve their security tooling, previously resolved findings are often reintroduced by new scanning solutions. This results in repetitive validation cycles, driving duplicated effort, operational inefficiencies, and increased developer fatigue.<br>
 
+Standardized, clearly identifiable dummy credentials should be used across source code, configurations, scripts, and documentation. Adhering to approved naming conventions ensures consistent differentiation between test and real credentials.
+This approach improves detection of unintended secret exposure, reduces false positives in security scans, and enables faster, more accurate validation during code reviews and security assessments.
+
+```
+// auth.test.js
+…
+const ClientId = "dummy_12347d-4e1a-9c2f-6d8e5a1b2c3d";
+const ClientSecret = "dummy_1234xZrT6mN8sW4yB!cD0eF1gH"; 
+
+test("should return mock token", () => {
+  expect(ClientSecret).toBeDefined();
+});
+```
+
 ---
 
 ## ⚠️ The Core Problem
