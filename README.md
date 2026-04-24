@@ -43,6 +43,16 @@ As organizations evolve their security posture whether by upgrading existing too
 
 This is a broader industry challenge: false positive classifications are not portable across different secret scanning tools. As a result, organizations using multiple tools or migrating between them must re-evaluate and re-mark the same issues, leading to duplicated effort and frustration.
 
+```
+// auth.test.js
+…
+const ClientId = "3f9a2c44-8b7d-4e1a-9c2f-6d8e5a1b2c3d";
+const ClientSecret = "Vh7$kL9pQ2xZrT6mN8sW4yB!cD0eF1gH"; 
+
+test("should return mock token", () => {
+  expect(ClientSecret).toBeDefined();
+});
+```
 
 ---
 
