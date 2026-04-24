@@ -81,60 +81,8 @@ By consistently applying this practice, teams benefit from:
 * Reduced alert fatigue from secret scanning tools 
 * Enhanced accuracy in identifying genuine security risks 
 
----
-
-## ⚠️ The Core Problem
-
-In modern development and testing environments, dummy or inactive credentials are often required to simulate real-world scenarios. However:
-
-- Secret scanning tools frequently flag these as real exposures  
-- High volumes of **false positives** are generated  
-- Developers must repeatedly validate the same findings  
-
-### 🔁 Tooling Challenge
-Even though tools like:
-- GitHub Advanced Security  
-- git-secrets  
-
-allow false positive classification, these:
-- Are **tool-specific**
-- Lack **portability across tools**
-- Do not persist across tool upgrades or migrations  
-
-👉 Result:
-- Repeated validation cycles  
-- Increased developer fatigue  
-- Reduced productivity  
-- Alert fatigue  
+Overall, this method strengthens both development efficiency and security assurance by making the intent of credentials explicit and unambiguous.
 
 ---
 
-## 🔍 Example: Ambiguous Credentials
-
-```javascript
-// auth.test.js
-const ClientId = "3f9a2c44-8b7d-4e1a-9c2f-6d8e5a1b2c3d";
-const ClientSecret = "Vh7$kL9pQ2xZrT6mN8sW4yB!cD0eF1gH"; 
-
-test("should return mock token", () => {
-  expect(ClientSecret).toBeDefined();
-});
-
-
-
-
-<!-- Header Section -->
-<h2 align="left"><font face="Arial">Payment security encompasses the systems, processes, and safeguards designed to protect financial transactions from unauthorized access, data breaches, and fraud. Whether for online or offline businesses, robust payment security is crucial for maintaining customer trust, preventing financial losses, and adhering to relevant regulations and industry standards.</font></h2>
-
-<h2 align="left"><font face="Arial">The payment systems involves;</font></h2> 
-Three computer systems are involved whenever a customer makes a card/online purchase online. <br>
-
-**The merchant website** 
-Contains the product catalogue and shopping cart. Always starts the process to collect the customer’s cardholder data when the customer asks to checkout. <br>
-
-**The customer computer:**
-Running a web browser such as Firefox, Chrome or Internet Explorer. <br>
-
-**The payment service provider (PSP):**
-is a third-party company that facilitates the processing of online payments for businesses. PSPs enable merchants to accept various payment methods, including credit cards, debit cards, bank transfers, digital wallets, and more, through a single platform. They handle the technical and security aspects of payment processing, allowing businesses to focus on their core operations. <br>
 
