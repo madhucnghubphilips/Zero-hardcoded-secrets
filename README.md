@@ -1,8 +1,8 @@
 # Zero-hardcoded-secrets
 Standardized dummy credential framework as a preventive and scalable solution to eliminate hardcoded secret risks at the source
 
-![platform](https://img.shields.io/badge/PCI-DSS-blue)
-![platform](https://img.shields.io/badge/Payment-Gateway-purple)
+![platform](https://img.shields.io/badge/GHAS-blue)
+![platform](https://img.shields.io/badge/GHAS-SecreteScan-purple)
 ![](https://img.shields.io/badge/Threat%20Model-STRIDE,%20IriusRisk-yellow)
 ![platform](https://img.shields.io/badge/Proxy-OWASP%20ZAP,%20Burpsuite-green)
 ![platform](https://img.shields.io/badge/SAST-Fortify,%20Coverity,%20BlackDuck,%20GitSec,%20Checkov-orange)
