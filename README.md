@@ -3,6 +3,9 @@ Standardized dummy credential framework as a preventive and scalable solution to
 
 ![platform](https://img.shields.io/badge/GHAS-blue)
 ![platform](https://img.shields.io/badge/GHAS-SecreteScan-purple)
+![platform](https://img.shields.io/badge/Inner-source-yellow)
+![platform](https://img.shields.io/badge/Private-Repo-purple)
+![platform](https://img.shields.io/badge/Archive-Repo-green)
 ![](https://img.shields.io/badge/Threat%20Model-STRIDE,%20IriusRisk-yellow)
 ![platform](https://img.shields.io/badge/Proxy-OWASP%20ZAP,%20Burpsuite-green)
 ![platform](https://img.shields.io/badge/SAST-Fortify,%20Coverity,%20BlackDuck,%20GitSec,%20Checkov-orange)
